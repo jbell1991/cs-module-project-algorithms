@@ -3,10 +3,12 @@ Input: a List of integers where every int except one shows up twice
 Returns: an integer
 '''
 def single_number(arr):
-    # Your code here
-
-    pass
-
+    # takes in a list of integer pairs with one single number with no pair
+    # loop through the array and count each number
+    for i in range(0, len(arr)):
+        # if the count is 1
+        if arr.count(i) == 1:
+            return i
 
 if __name__ == '__main__':
     # Use the main function to test your implementation
